@@ -41,7 +41,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Clean Code @ blaulabs</h1>
+					<h1>Clean Code @ blau</h1>
 					<h3>Eine kurze Vorstellung</h3>
 					<p>
 						<small>Sven Tennie (sven.tennie@blau.de)</a></small>
@@ -53,7 +53,7 @@
                                           <ul>
                                           <li>kann gut gelesen und leicht verstanden werden</li>
                                           <li>kann einfach erweitert werden</li>
-                                          <li>ist offensichtlich korrekt (keine versteckten Fehler)</li>
+                                          <li>ist offensichtlich korrekt (keine versteckten <small>Fehler</small>)</li>
                                           <li>ist gut getestet</li>
                                           <li>dient als Dokumentation für die Anforderung / das Feature</li>
                                           </ul>
@@ -69,7 +69,7 @@
                                           <li>Stabilität & Korrektheit</li>
                                           <ul>
                                             <li>Fehler in unserer Software könnten richtig teuer werden</li>
-                                            <li>Die Ops-Leute wollen Nachts lieber schlafen, als unsere Fehler zu behandeln</li>
+                                            <li>die Admins wollen nachts lieber schlafen, als unsere Fehler zu behandeln</li>
                                           </ul>
                                           </ul>
 					</p>
@@ -80,40 +80,31 @@
                                           <ul>
                                           <li>Erweiterbarkeit</li>
                                           <ul>
-                                            <li>blau muss sich möglichst schnell an Rechtsprechung und Markt anpassen können</li>
+                                            <li>blau passt sich möglichst schnell an Rechtsprechung und Markt an</li>
                                             <li>der Aufwand für eine Erweiterung muss (einigermaßen) konstant bleiben,
-                                              sonst bekommt man mittelfristig ein Problem</li>
-                                               </ul>
+                                                sonst bekommt man mittelfristig ein Problem</li>
+                                          </ul>
                                           </ul>
 					</p>
 				</section>
                                 <section>
-                                  <h2>Wie?</h2>
-                                  <p>
-                                    <ul>
-                                      <li>Test Driven Development</li>
-                                      <li>Refactoring</li>
-                                      <li>Pair Programming</li>
-                                      <li>Code Reviews</li>
-                                      <li>Regeln</li>
-                                    </ul>
-                                  </p>
+                                  <h1>Wie?</h1>
                                 </section>
                                 <section>
                                   <h2>Test Driven Development</h2>
                                   <p>
                                     <ul>
-                                      <li>Wir stecken viel Arbeit in die Tests
+                                      <li>wir stecken viel Arbeit in die Tests
                                         <ul>
                                           <li>Test- und Produktions-Code werden gleichwertig behandelt</li>
                                           <li>Tests werden stets refactored und gepflegt</li>
                                         </ul>
                                       </li>
                                       <li>möglichst "Test First"</li>
-                                      <li>Wir streben nach 100% Testabdeckung</li>
-                                      <li>Wir vertrauen unseren Tests</li>
+                                      <li>wir streben nach 100% Testabdeckung</li>
+                                      <li>wir vertrauen unseren Tests</li>
                                         <ul>
-                                          <li>Wenn alle Tests grün sind, releasen wir</li>
+                                          <li>wenn alle Tests grün sind, releasen wir</li>
                                         </ul>
                                     </ul>
                                   </p>
@@ -122,10 +113,10 @@
                                   <h2>Refactoring</h2>
                                   <p>
                                     <ul>
-                                      <li>Wenn wir etwas verbessern können, tun wirs</li>
-                                      <li>immer genug Zeit fürs Aufräumen und Verbessern eingeplant</li>
-                                      <li>die Tests stellen sicher, dass wir dabei nicht kaputt machen</li>
-                                      <li>Der Code gehört uns allen gemeinsam
+                                      <li>wenn wir etwas verbessern können, tun wirs</li>
+                                      <li>immer Zeit fürs Aufräumen und Verbessern eingeplant</li>
+                                      <li>die Tests stellen sicher, dass wir dabei nichts kaputt machen</li>
+                                      <li>der Code gehört uns allen gemeinsam
                                         <ul>
                                           <li>jeder darf alles verbessern</li>
                                         </ul>
@@ -139,9 +130,9 @@
                                     <ul>
                                       <li>je nach Team und Bedarf machen wir Code Reviews</li>
                                       <li>am Beamer mit dem ganzen Team</li>
-                                      <li>Konstruktive Diskussionskultur</li>
+                                      <li>konstruktive Diskussionskultur</li>
                                       <li>Wissenstransfer</li>
-                                      <li>Code muss für jeden gut lesbar sein</li>
+                                      <li>Code muss für jeden gut verständlich sein</li>
                                     </ul>
                                   </p>
                                   </section>
@@ -149,7 +140,7 @@
                                   <h2>Pair Programming</h2>
                                   <p>
                                     <ul>
-                                      <li>Wir arbeiten immer eng zusammen</li>
+                                      <li>wir arbeiten immer eng zusammen</li>
                                       <li>häufig zu zweit an einem Rechner
                                         <ul>
                                           <li>gemeinsames Verständnis des Problems</li>
@@ -159,15 +150,24 @@
                                       </li>
                                     </ul>
                                 </section>
+                                <section data-background="book-clean-code_2.png" width="100%"">
+                                    <h2>Regeln</h2>
+                                    <p>
+                                        <ul>
+                                            <li>Clean Code von Uncle Bob</li>
+                                        </ul>
+                                    </p>
+                                </section>
                                 <section>
-                                  <h2>Regeln</h2>
-                                  <p>
-                                    <ul>
-                                      <li>Clean Code von Uncle Bob</li>
-                                      <li>Persönliche Erfahrungen</li>
-                                      <li>nach einigen Paring- und Review-Runden hat jeder die wichtigsten Regeln im Kopf</li>
-                                      <li>Diskussionsergebnisse aus Reviews</li>
-                                      <li>kein starres Regelwerk - aber man braucht fürs Review einen guten Grund es anders zu machen ... ;)
+                                    <h2>Regeln</h2>
+                                    <p>
+                                        <ul>
+                                            <li>persönliche Erfahrungen</li>
+                                            <li>nach einigen Pairing- und Review-Runden hat jeder die wichtigsten Regeln im Kopf</li>
+                                            <li>Diskussionsergebnisse aus Reviews</li>
+                                            <li>kein starres Regelwerk - aber man braucht fürs Review einen guten Grund es anders zu machen ... ;)</li>
+                                        </ul>
+                                    </p>
                                 </section>
                                 <section>
                                   <h1>Fragen?</h1>
@@ -184,22 +184,25 @@
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+                            width: 960,
+                            height: 700,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+			    controls: true,
+			    progress: true,
+			    history: true,
+			    center: true,
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
+			    transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			    // Optional reveal.js plugins
+			    dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			    ]
 			});
 
 		</script>
